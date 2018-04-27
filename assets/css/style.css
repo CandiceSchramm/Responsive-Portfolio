@@ -1,0 +1,117 @@
+nav {
+    height: 56px;
+    background-color: lightcoral;
+    border-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+}
+.nametag {
+    background-color: white;
+    position: absolute;
+    padding: 12px 10px 12px 10px;
+    top: 0%;
+    right: 840px;
+}
+.menu {
+    list-style-type: none;
+    float:right;
+    position:absolute;
+    right: 240px;
+    top: 1%;
+}
+.menu-item {
+    margin-top: 5px;
+    padding: 12px;
+    float: right;
+}
+.background {
+    padding: 50px 150px 50px 150px;
+    background-image: url("../images/background-image-2x.png")
+}
+.main-content-box {
+    margin: 1% 5% 0% 5%;
+    background-color: whitesmoke;
+    padding: 1%;
+    height: 555px;
+    width: 960px;
+}
+.main-content-container {
+    padding: 30px
+}
+.main-image-left {
+    float:left;
+    margin: 20px; 
+}
+.footer {
+    padding: 28px;
+    background-color: lightcoral;
+    border-style: solid;
+    border-top-width: 2px;
+    border-top-color: black;
+}
+form {
+    margin-left: 20px;
+}
+.email-text-box {
+    width: 500px;
+    height:20px;
+}
+.line {
+    height: 1px;
+    background-color: black;
+    margin:15px;
+}
+.message {
+    height: 150px;
+    width: 500px;
+}
+.submit-button {
+    background-color: lightcoral;
+    height: 20px;
+}
+.portfolio-item {
+    margin: 10px 20px 0px 20px;
+    float: left;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.image-tag {
+    background-color:lightcoral;
+    width: 250px; 
+    padding:15px 0px 15px 0px;
+    text-align: center;
+    top: 45%;
+    position: absolute;
+}
+
+/* fonts, text design*/
+body {
+    text-decoration: none;
+    line-height: 22px;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    letter-spacing:2px; 
+
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+#name-font {
+    font-family: 'Monoton', cursive;
+    letter-spacing: 2px;
+    font-size: 30px;
+    line-height: 32px;
+}
+
+/* Media Querries Below */
+
+@media screen and (max-width: 980px){
+    /*some element or class{
+        css changes
+    }
+}
