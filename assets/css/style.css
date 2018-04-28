@@ -10,13 +10,13 @@ nav {
     position: absolute;
     padding: 12px 10px 12px 10px;
     top: 0%;
-    right: 840px;
+    right: 60%;
 }
 .menu {
     list-style-type: none;
     float:right;
     position:absolute;
-    right: 240px;
+    right: 15%;
     top: 1%;
 }
 .menu-item {
@@ -32,7 +32,6 @@ nav {
     margin: 1% 5% 0% 5%;
     background-color: whitesmoke;
     padding: 1%;
-    height: 555px;
     width: 960px;
 }
 .main-content-container {
@@ -54,7 +53,7 @@ form {
 }
 .email-text-box {
     width: 500px;
-    height:20px;
+    height: 20px;
 }
 .line {
     height: 1px;
@@ -71,7 +70,7 @@ form {
 }
 .portfolio-item {
     margin: 10px 20px 0px 20px;
-    float: left;
+    float:left;
 }
 .clearfix::after {
     content: "";
@@ -80,11 +79,12 @@ form {
 }
 .image-tag {
     background-color:lightcoral;
-    width: 250px; 
+    width: 200px; 
     padding:15px 0px 15px 0px;
     text-align: center;
-    top: 45%;
+    top: 42%;
     position: absolute;
+    z-index: 3;
 }
 
 /* fonts, text design*/
@@ -108,10 +108,62 @@ a {
     line-height: 32px;
 }
 
-/* Media Querries Below */
+/* Media Queries Below */
 
+/* max 980px */
 @media screen and (max-width: 980px){
-    /*some element or class{
-        css changes
+    .main-content-box{
+        width:650px;
+    }
+    .menu{
+        right: 0%;
+    }
+    .nametag {
+        right: 54%;
+    }
+    .background{
+    padding: 50px 25% 50px 2%
+    }
+}    
+/* Max 768px */
+@media screen and (max-width:768px){
+    .main-content-box {
+        width: 675px
+    }    
+    .menu{
+        right: 0%;
+    }
+    .nametag {
+        right: 47%;
+        padding: 12px 2px 12px 2px;
+    }
+    .background{
+    padding: 50px 5% 50px 0%;
+    }  
+}
+/* Max 640px */
+/* !!!the example photo for 640px is not 640px!!! it is smaller*/
+
+@media screen and (max-width:640px){
+    .main-content-box {
+        width: 580px
+    }  
+    .main-content-box{
+        margin-left:4%;
+    }
+    nav {
+    height: 100px;
+    }
+    .nametag{
+        left:0%;
+        width: 100%;
+        text-align: center;
+    }
+    .menu{
+        top: 7%;
+        right:25%
+    }
+    .background {
+        padding-top: 20px
     }
 }
